@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,700;1,700&display=swap');
+
+:root {
+    /*cores da pagina*/
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3e8ff1;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("assets/Background.png"); /*a inserção da imagem foi feita aqui pq essa imagem é apenas decorativa, não afeta a navegação do usuário*/
+    background-repeat: no-repeat; /*para a imagem nao repetir*/
+    background-size: contain; /*para a imagem ocupar todos os lados da pagina*/
+    align-items: center;
+    text-align: center;
+
+}
+
+.container {
+    height: 110vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 0.33rem;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em; /*margem entre os botoes*/
+    margin: 1em 0;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal); /*o "solid" é pq eu quero a linha do botao "lisa"*/
+}
+
+.container_aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0; /*ta dando espaçamento da imagem alura combo com os elementos de cima e de baixo*/
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+
+.botao__terciario {
+    display: inline-block;
+    margin-top: 1em; /*margim-top é a margim de cima*/
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex; /*aqui alinhou um item ao lado do outro*/
+    justify-content: center; /*aqui alinhou os objetos no centro*/
+    list-style-type: none; /*aqui foi tirado "pontinho" que aparece na lista*/
+    margin: 5em 0;
+}
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content:  center;
+    color: var(--branco-principal);
+}
+.lista__link {
+    font-size: 13px;
+    margin: 3em 1em;
+    list-style-type: none;
+}
+.lista__link a{ /*esse 'a' foi meio que pra conseguir alterar o estilo das letras, preciso entender isso melhor*/
+    color: var(--branco-principal);
+    font-size: 16px;
+    text-decoration: none;
+}
+.rodape__texto {
+    margin: 2em;
+    font-size: 14px;
+}
+
+.lista__link a:hover { /*ação pra quando eu passo o mouse por cima*/
+    color: var(--botao-azul);
+}
+
+.lista__link a:active { /*ação do botao quando depois que eu clico nele*/
+    color: purple;
+}
+
+.container__botao:hover { 
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
